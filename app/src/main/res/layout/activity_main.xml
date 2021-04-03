@@ -6,13 +6,167 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <GridLayout
+        android:id="@+id/GridLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        tools:context=".GridLayoutActivity"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="287dp">
+
+        <Button
+            android:id="@+id/c"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/c" />
+
+        <Button
+            android:id="@+id/ce"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/ce" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/divide" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/multiply" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/minus" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/plus" />
+
+        <Button
+            android:id="@+id/equals"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/equals" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".GridLayoutActivity">
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/button0" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/button1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/button2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/button3" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/button4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/button5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/button6" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/button7" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/button8" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/button9" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/GridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
