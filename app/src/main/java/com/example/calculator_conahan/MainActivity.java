@@ -197,6 +197,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     num1 = String.valueOf(calculate(num1,num2,op));
+                    num2 = "";
                     text.setText(num1);
                 }
 
@@ -213,6 +214,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     num1 = String.valueOf(calculate(num1,num2,op));
+                    num2 = "";
                     text.setText(num1);
                 }
 
@@ -229,6 +231,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     num1 = String.valueOf(calculate(num1,num2,op));
+                    num2 = "";
                     text.setText(num1);
                 }
 
@@ -245,6 +248,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     num1 = String.valueOf(calculate(num1,num2,op));
+                    num2 = "";
                     text.setText(num1);
                 }
 
@@ -256,6 +260,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
 
                 num1 = String.valueOf(calculate(num1,num2,op));
+                num2 = "";
                 text.setText(num1);
 
             }
