@@ -13,9 +13,11 @@
         android:columnCount="2"
         android:orientation="horizontal"
         android:rowCount="2"
-        tools:context=".GridLayoutActivity"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="287dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/GridLayout1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".GridLayoutActivity">
 
         <Button
             android:id="@+id/c"
@@ -65,6 +67,13 @@
             android:minWidth="0dp"
             android:minHeight="0dp"
             android:text="@string/equals" />
+
+        <Button
+            android:id="@+id/decimal"
+            android:layout_gravity="left|top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/decimal" />
 
     </GridLayout>
 
@@ -161,7 +170,7 @@
         android:layout_marginTop="128dp"
         android:scaleX="1.5"
         android:scaleY="1.5"
-        android:text="TextView"
+        android:text="@string/text_view"
         app:layout_constraintBottom_toTopOf="@+id/GridLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

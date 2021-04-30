@@ -17,4 +17,6 @@
     <string name="minus">-</string>
     <string name="plus">+</string>
     <string name="equals">=</string>
+    <string name="decimal">.</string>
+    <string name="text_view">Expression will appear here</string>
 </resources>
