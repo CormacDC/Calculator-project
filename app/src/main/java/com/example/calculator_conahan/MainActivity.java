@@ -1,5 +1,6 @@
 package com.example.calculator_conahan;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -313,6 +314,35 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return -1;
 
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState){
+
+        super.onSaveInstanceState(outState);
+
+        outState.putString("num1",num1);
+        outState.putString("num2",num2);
+        outState.putString("op",op);
+        outState.putInt("step",step);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState){
+
+        super.onRestoreInstanceState(savedInstanceState);
+
+        num1 = savedInstanceState.getString("num1");
+        num2 = savedInstanceState.getString("num2");
+        op = savedInstanceState.getString("op");
+        step = savedInstanceState.getInt("step");
+
+        if (step % 2 != 0 || num2.equals("")){
+            text.setText(num1);
+        }
+        else{
+            text.setText(num2);
         }
     }
 }
